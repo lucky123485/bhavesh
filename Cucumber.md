@@ -95,7 +95,7 @@ Ruby on Rails
 - Watir
 
 
-## Which language is used in cucumber?
+### Which language is used in cucumber?
 
 **Cucumber** tool was originally written in the "**Ruby**" programming language. It was exclusively used only for testing of Ruby as a complement to the **RSpec** BDD framework.
 
@@ -103,13 +103,13 @@ But now, Cucumber supports a variety of different programming languages includin
 
 ![](https://lh7-us.googleusercontent.com/lzitEW5ehCSF_PYKiGSH_08eINNYDHsqHiU2Aa8CutNgQ15QMd9MsX8rJQ457EIKDGrHrdjvYoz3v8xQ_VI28TSC0e6mMQZYDRfK5cslKDEY2Gbsiacw8MMLNpBOsZoBAZHTRZfO54W8h3wQwiVKYOM)
 
-**What is Gherkin?**
+### What is Gherkin?
 
 Gherkin is Cucumber’s language parser, which allows software behaviours to be specified in a logical language that people can understand. This means that Cucumber feature documentation is written in business-facing text that is non-technical and human readable for stakeholders like business analysts and managers. This is achieved because Gherkin’s natural language syntax is designed to provide easy to understand documentation of the code under test. Gherkin is written in a syntax that supports BDD.
 
 ‍
 
-**How does Gherkin work?**
+### How does Gherkin work?
 
 Cucumber tests are divided into ‘Features’, which are use cases that describe a specific function being tested.
 
@@ -199,7 +199,7 @@ And I write  "EmailAddress" with "Tomjohn\@gmail.com."
 
 Given, When, Then, and, but are test steps. You can use them interchangeably. The interpreter doesn’t display any error. However, they will surely not make any ‘sense’ when read.
 
-**Gherkin Examples**
+### Gherkin Examples
 
 
 Feature:  Login functionality of social networking site Facebook. 
@@ -219,7 +219,7 @@ All the words written in bold are Gherkin keywords.
 Gherkin will analyse each step written in the step definition file. Therefore, the steps are given in the feature file and the step definition file should match.
 
 
-## Best practices of using Gherkin
+### Best practices of using Gherkin
 
 - Each scenario should execute separately
 - Every feature should able to be executed along
@@ -230,7 +230,8 @@ Gherkin will analyse each step written in the step definition file. Therefore, t
 - Try to combine all your common scenarios
 
 
-##     Advantages of Gherkin
+  ### Advantages of Gherkin
+
 
 - Gherkin is simple enough for non-programmers to understand
 - Programmers can use it as a very solid base to start their tests
@@ -242,7 +243,7 @@ Gherkin will analyse each step written in the step definition file. Therefore, t
 - Gherkin Test cases link acceptance tests directly to automated tests
 - Style of writing tests cases are easier to reuse code in other tests
 
-       Disadvantages of Gherkin
+ ### Disadvantages of Gherkin
 
 - It requires a high level of business engagement and collaborations
 - May not work well in all scenarios
@@ -258,7 +259,7 @@ Many organisations prefer the Selenium framework for cross-browser compatibility
 - BrowserStack cloud testing supports [Selenium testing with Cucumber](https://www.browserstack.com/guide/automation-using-cucumber-selenium); sign up, choose the required device-browser-OS combination, and start testing websites.
 - With [BrowserStack Test Management](https://www.browserstack.com/test-management), teams can upload BDD-JSON based report upload using Cucumber. This enables you to sync test case reports on BrowserStack Test Management from your terminal.
 
-**Summary**
+### Summary
 
 - The Cucumber testing tool is a purely business-driven development tool written in Ruby.
 - The business-driven development approach is an advancement over the test-driven development approach, which follows the
@@ -266,3 +267,129 @@ Many organisations prefer the Selenium framework for cross-browser compatibility
 - Cucumber framework uses Gherkin ( A simple plain text language parser) to describe expected software behaviours logically, resulting in better communication and collaboration among technical and non-technical team members.
 - Cucumber is compatible with popular software platforms like Selenium, Watir, Ruby, and others.
 - One must also consider the limitations before deciding on the behaviour-driven development approach.
+
+### Pre-requisites
+
+        Visual Studio code install
+        Node.js and npm (Node Package Manager) installed
+
+### Environment
+
+PRETTY_NAME="Ubuntu 22.04.3 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.3 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+
+### installation Of VS Code
+
+    there are many method of insatlling vs code in Ubantu Linux one is given below
+
+    Using .deb package
+
+### Download the .deb package:
+
+    Visit the VS Code download page and download the .deb package for Debian/Ubuntu.
+
+### Install the package:
+
+    Open the folder where the package is downloaded. And then open the terminal inside the folder and run the below command.
+
+   $ sudo apt install ./(FileName).deb
+
+    After complition of installation open the VS Code by command given below.
+
+$ code .
+
+### Installation of node.js
+
+    installing Node.js by using command
+
+    $ sudo snap install node --classic
+
+  ###   1. Install Cucumber Language Support:
+ * 1. Open Visual Studio Code.
+
+    Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
+
+    Search for & Cucumber (Gherkin) Full Support or a similar extension for Cucumber support.
+
+    Install the extension.
+
+* 2. Create a New Feature File:
+
+    In your Visual Studio Code workspace, create a new feature file with the .feature extension (e.g., my.feature). You can do this by right-clicking on your project directory and selecting New File.
+* 3. Write Gherkin Scenarios:
+
+Inside your feature file, write your Gherkin scenarios. For example:
+
+Feature: My Feature
+
+Scenario: My Scenario
+Given I have some precondition
+When I perform some action
+Then I should see some result
+
+* 4. Install Cucumber Step Definition Generator
+
+    Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
+
+    Search for Cucumber Step Definition Generator .
+
+    Install the extension.
+
+* 5.Change the settings in step definitions generator
+
+    Access the settings and search for Step Definition Generator. Modify the desired setting value.
+    Save the updated settings.
+
+    "Step-definition-generator:Runner"
+    The testing framework used for step definitions: cypress
+
+    "Step-definition-generator:language"
+    The programing language used for step definitions:typescript
+
+    "step-definition-generator.arrow": true,
+
+    "step-definition-generator.async": false
+
+* 6.Generate a step definition using Cucumber Step Definitions Generator extension:
+
+    The extension can automatically create a new file for the step definition when you generate it. To do this, click an icon in the Editor Actions menu .
+    The extension can also generate the step definition and copy it to the clipboard, which makes it easy to access and paste into the appropriate file. To use this option, you can again right-click on the feature file or click an icon in the Editor Actions menu.
+
+    import { Given, When, Then, DataTable } from '@badeball/cypress-cucumber-preprocessor';
+
+    Given(I have some precondition, () => {
+    // [Given] Sets up the initial state of the system.
+    });
+
+    When(I perform some action, () => {
+    // [When] Describes the action or event that triggers the scenario.
+    });
+
+    Then(I should see some result, () => {
+    // [Then] Describes the expected outcome or result of the scenario.
+    });
+
+* 7.Before Generating Step Definition Install the Package:
+
+    Make sure you have installed the @badeball/cypress-cucumber-preprocessor package. Run the following command in your project directory:
+
+npm install --save-dev @badeball/cypress-cucumber-preprocessor
+
+* 8.Type Declarations:
+
+    If TypeScript is being used in your project, ensure that the required type declarations are installed. You can install the TypeScript types for this package by running:
+
+npm install --save-dev @types/cypress-cucumber-preprocessor
+
+
+
