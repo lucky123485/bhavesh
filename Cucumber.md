@@ -275,18 +275,18 @@ Many organisations prefer the Selenium framework for cross-browser compatibility
 
 ### Environment
 
-PRETTY_NAME="Ubuntu 22.04.3 LTS"
-NAME="Ubuntu"
-VERSION_ID="22.04"
-VERSION="22.04.3 LTS (Jammy Jellyfish)"
-VERSION_CODENAME=jammy
-ID=ubuntu
-ID_LIKE=debian
-HOME_URL="https://www.ubuntu.com/"
-SUPPORT_URL="https://help.ubuntu.com/"
-BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-UBUNTU_CODENAME=jammy
+PRETTY_NAME="Ubuntu 22.04.3 LTS"<br>
+NAME="Ubuntu"<br>
+VERSION_ID="22.04"<br>
+VERSION="22.04.3 LTS (Jammy Jellyfish)"<br>
+VERSION_CODENAME=jammy<br>
+ID=ubuntu<br>
+ID_LIKE=debian<br>
+HOME_URL="https://www.ubuntu.com/"<br>
+SUPPORT_URL="https://help.ubuntu.com/"<br>
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"<br>
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"<br>
+UBUNTU_CODENAME=jammy<br>
 
 ### installation Of VS Code
 
